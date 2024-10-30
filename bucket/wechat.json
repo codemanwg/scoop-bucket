@@ -1,0 +1,18 @@
+{
+    "version": "3.9.12",
+    "description": "微信 for Windows",
+    "homepage": "https://weixin.qq.com/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://78ca1c70a078239525bdce313131486d.dlied1.cdntips.net/dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
+            "hash": "4985f96235154fc4176e3972f14709f5f10fc0606e5589075a6da9b6dc7fccd3",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
+            ]
+        }
+    },
+    "bin": "WeChatSetup.exe",
+    "shortcuts": [["WeChat.exe", "WeChat"]]
+}
