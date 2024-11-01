@@ -1,0 +1,22 @@
+{
+    "version": "6.6.0",
+    "description": "阿里云盘是一款速度快、不打扰、够安全、易于分享的网盘，你可以在这里存储、管理和探索内容，尽情打造丰富的数字世界。",
+    "homepage": "https://www.alipan.com/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_dingtalk/suit_bu1_dingtalk202103191654_76478.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.aliyundrive.net/downloads/apps/desktop/aDrive-6.6.0.exe#/dl.7z",
+            "hash": "34cf2ef493657a617a07376a00775987ab6c003aa7fe9eb457f6d1750e797409"
+        }
+    },
+    "installer": {
+        "script": [
+            "Remove-Item -Force -Recurse \"$dir\\`$PLUGINSDIR\"",
+            "Remove-Item -Force -Recurse \"$dir\\`$TEMP\""
+        ]
+    },
+    "shortcuts": [["aDrive.exe", "阿里云盘"]]
+}
