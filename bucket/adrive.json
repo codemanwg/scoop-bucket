@@ -8,6 +8,7 @@
     },
     "url": "https://cdn.aliyundrive.net/downloads/apps/desktop/aDrive-6.6.0.exe#/dl.7z",
     "hash": "34cf2ef493657a617a07376a00775987ab6c003aa7fe9eb457f6d1750e797409",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
     "installer": {
         "script": [
             "Remove-Item -Force -Recurse \"$dir\\`$PLUGINSDIR\"",
